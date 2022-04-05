@@ -1,4 +1,4 @@
 # Brick Rigs DevKit
-Branch: DEV
+Branch: `DEV`
 
-This project should help with modding for Brick Rigs
+*This project should help with modding for Brick Rigs*
