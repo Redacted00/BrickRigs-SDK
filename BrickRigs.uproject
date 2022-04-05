@@ -9,8 +9,30 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"CoreUObject",
+				"Engine",
+				"UMG"
 			]
+		},
+		{
+			"Name": "BrickRigsEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"AnimGraph",
+				"CoreUObject",
+				"UnrealEd"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "RiderLink",
+			"Enabled": false
+		},
+		{
+			"Name": "Landmass",
+			"Enabled": true
 		}
 	]
 }

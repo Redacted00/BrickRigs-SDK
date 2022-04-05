@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class BrickRigs : ModuleRules
+public class BrickRigsEditor : ModuleRules
 {
-    public BrickRigs(ReadOnlyTargetRules Target) : base(Target)
+    public BrickRigsEditor(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -28,14 +28,15 @@ public class BrickRigs : ModuleRules
             "Landscape",
             "ApplicationCore"
         });
-        
+
         DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
 
-        if (Target.bBuildEditor)
-        {
-            PrivateDependencyModuleNames.AddRange(new string[] {
-                "UnrealEd"
-            });
-        }
+        PublicIncludePaths.AddRange(new string[] { "BrickRigsEditor/Public" });
+        PrivateIncludePaths.AddRange(new string[] { "BrickRigsEditor/Private" });
+        PublicDependencyModuleNames.AddRange(new string[] { "BrickRigs" });
+        PrivateDependencyModuleNames.AddRange(new string[] { "BrickRigs" });
+        //PrivateDependencyModuleNames.AddRange(new string[] { "UnrealEd" });
+        PrivateIncludePathModuleNames.AddRange(new string[] { });
+        DynamicallyLoadedModuleNames.AddRange(new string[] { });
     }
 }

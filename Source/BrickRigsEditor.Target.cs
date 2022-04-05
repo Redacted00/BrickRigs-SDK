@@ -10,5 +10,8 @@ public class BrickRigsEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		ExtraModuleNames.AddRange( new string[] { "BrickRigs" } );
+
+		// Game editor
+		ExtraModuleNames.AddRange(new string[] { "BrickRigsEditor" });
 	}
 }
