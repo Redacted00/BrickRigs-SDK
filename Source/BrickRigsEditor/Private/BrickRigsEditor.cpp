@@ -44,6 +44,7 @@ void FBrickRigsEditorModule::StartupModule()
 
     
     ASSET_TYPE_ACTIONS(LevelInfo);
+    ASSET_TYPE_ACTIONS(WeatherCondition);
 
 #undef ASSET_TYPE_ACTIONS
 }
