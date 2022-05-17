@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include <WeatherCondition.generated.h>
 #include "Modules/ModuleInterface.h"
 #include "Modules/ModuleManager.h"
 #include "UnrealEd.h"
@@ -11,7 +10,6 @@
 #include "Editor/UnrealEdEngine.h"
 #include "UnrealEdGlobals.h"
 #include "AssetToolsModule.h"
-#include "WeatherConditionFactory.h"
 #include "AssetTypeActions_Base.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(BrickRigsEditor, All, All)

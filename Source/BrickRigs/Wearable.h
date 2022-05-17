@@ -13,15 +13,14 @@ UCLASS()
 class BRICKRIGS_API AWearable : public AInventoryItem
 {
 	GENERATED_BODY()
-	
-protected:
-    // ~Properties
-    // Name displayed for the type of color
-    UPROPERTY(EditDefaultsOnly, Category = Wearable)
-        FText ColorDisplayName;
-    // Color of the wearable
-    UPROPERTY(EditDefaultsOnly, Category = Wearable)
-        FLinearColor Color;
-    // ~Properties
 
+protected:
+	// ~Properties
+	// Name displayed for the type of color
+	UPROPERTY(EditDefaultsOnly, Category = Wearable)
+	FText ColorDisplayName;
+	// Color of the wearable
+	UPROPERTY(EditDefaultsOnly, Category = Wearable)
+	FLinearColor Color;
+	// ~Properties
 };

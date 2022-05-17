@@ -3,8 +3,12 @@
 #include "BrickRigsEditor.h"
 #include "Modules/ModuleManager.h"
 #include "Modules/ModuleInterface.h"
-
+#include <BrickRigs/WeatherCondition.h>
+#include <BrickRigs/GameModeInfo.h>
 #include <BrickRigs/LevelInfo.h>
+#include <BrickRigs/BrickDecal.h>
+#include <BrickRigs/DestructibleInstanceTemplate.h>
+#include <BrickRigs/BrickMaterial.h>
 #include "PropertyEditorModule.h"
 #include "Editor/UnrealEdEngine.h"
 #include "UnrealEdGlobals.h"
@@ -44,7 +48,11 @@ void FBrickRigsEditorModule::StartupModule()
 
     
     ASSET_TYPE_ACTIONS(LevelInfo);
-    ASSET_TYPE_ACTIONS(WeatherCondition);
+    ASSET_TYPE_ACTIONS(GameModeInfo);
+    ASSET_TYPE_ACTIONS(DestructibleInstanceTemplate);
+    ASSET_TYPE_ACTIONS(BrickMaterial);
+    ASSET_TYPE_ACTIONS(BrickDecal);
+
 
 #undef ASSET_TYPE_ACTIONS
 }

@@ -13,9 +13,8 @@ class BRICKRIGS_API AInventoryItem : public AActor
 	GENERATED_BODY()
 	
 public:
-    // ~Properties
-    UPROPERTY(EditDefaultsOnly, Category = Item)
-        TSubclassOf<UItemStaticInfo> StaticInfoClass;
-    // ~Properties
-
+	// ~Properties
+	UPROPERTY(EditDefaultsOnly, Category = Item)
+	TSubclassOf<UItemStaticInfo> StaticInfoClass;
+	// ~Properties
 };

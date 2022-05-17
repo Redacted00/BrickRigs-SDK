@@ -10,25 +10,23 @@
  * 
  */
 
-
 UENUM(BlueprintType)
 enum class EWearableTag : uint8
 {
-    Pants,
-    Shirt
+	Pants,
+	Shirt
 };
-
 
 UCLASS(Blueprintable)
 class BRICKRIGS_API UWearableStaticInfo : public UItemStaticInfo
 {
 	GENERATED_BODY()
-	
-public:
-    // ~Properties
-    // The type of wearable, i.e. a shirt, pants etc.
-    UPROPERTY(EditDefaultsOnly, Category = Wearable)
-        EWearableTag WearableType;
-    // ~Properties
 
+public:
+	// ~Properties
+	// The type of wearable, i.e. a shirt, pants etc.
+	UPROPERTY(EditDefaultsOnly, Category = Wearable)
+	EWearableTag WearableType;
+	// ~Properties
+	
 };

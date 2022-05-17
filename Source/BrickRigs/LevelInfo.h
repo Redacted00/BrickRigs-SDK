@@ -33,6 +33,6 @@ public:
         bool bUsesWorldComposition;
     // Whether the level allows any weather conditions
     UPROPERTY(EditDefaultsOnly, Category = Level)
-        bool bNoWeather;
+        bool bCanDisableTrains;
     // ~Properties
 };

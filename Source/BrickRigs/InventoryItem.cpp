@@ -3,5 +3,4 @@
 
 #include "InventoryItem.h"
 
-// Sets default values
 

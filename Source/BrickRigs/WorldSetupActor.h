@@ -13,14 +13,14 @@
 UCLASS()
 class BRICKRIGS_API AWorldSetupActor : public AActor
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 public:
-    // Sets default values for this actor's properties
-    AWorldSetupActor();
-    UPROPERTY(EditDefaultsOnly, Category = Components)
-        UDirectionalLightComponent* SunLightComponent;
-    UPROPERTY(EditDefaultsOnly, Category = Components)
-        USkyLightComponent* SkyLightComponent;
-    UPROPERTY(EditDefaultsOnly, Category = Components)
-        UPostProcessComponent* PostProcessComponent;
+	// Sets default values for this actor's properties
+	AWorldSetupActor();
+	UPROPERTY(EditDefaultsOnly, Category = Components)
+		UDirectionalLightComponent* SunLightComponent;
+	UPROPERTY(EditDefaultsOnly, Category = Components)
+		USkyLightComponent* SkyLightComponent;
+	UPROPERTY(EditDefaultsOnly, Category = Components)
+		UPostProcessComponent* PostProcessComponent;
 };
