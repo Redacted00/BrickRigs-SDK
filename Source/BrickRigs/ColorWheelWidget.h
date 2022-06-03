@@ -14,8 +14,7 @@ UCLASS()
 class BRICKRIGS_API UColorWheelWidget : public UUserWidget
 {
 	GENERATED_BODY()
-private:
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FColorChanged, const FLinearColor&, NewColor, EValueChangedEventType, EventType);
+
 
 protected:
 	// ~Properties
@@ -24,10 +23,6 @@ protected:
 	// ~Properties
 
 	public:
-	// ~Delegates
-	UPROPERTY(BlueprintAssignable)
-	FColorChanged OnColorChangedDelegate;
-	// ~Delegates
 
 	// Set the selected color
 	UFUNCTION(BlueprintCallable)
