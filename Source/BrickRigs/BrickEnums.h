@@ -77,3 +77,11 @@ enum class EBrickUIIconAtlas : uint8
 	Custom,
 	Max UMETA(Hidden)
 };
+
+UENUM(BlueprintType)
+enum class EValueChangedEventType : uint8
+{
+    Commit,
+    Cancel,
+    Pending
+};
