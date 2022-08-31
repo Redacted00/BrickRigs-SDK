@@ -14,16 +14,13 @@ UCLASS(Blueprintable)
 class BRICKRIGS_API USirenType : public UObject
 {
 	GENERATED_BODY()
-
-	UPROPERTY(EditDefaultsOnly)
-	FText DisplayName;
-
-	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<USoundCue> HornSound;
-
-	UPROPERTY(EditDefaultsOnly)
-	TSet<TSubclassOf<USoundCue>> SirenSounds;
-
-	
-	
+public:
+    // ~Properties
+    UPROPERTY(EditDefaultsOnly, Category = Siren)
+        FText DisplayName;
+    UPROPERTY(EditDefaultsOnly, Category = Siren)
+        USoundBase* HornSound;
+    UPROPERTY(EditDefaultsOnly, Category = Siren)
+        TArray<USoundBase*> SirenSounds;
+    // ~Properties
 };

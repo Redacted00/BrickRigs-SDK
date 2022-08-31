@@ -13,12 +13,10 @@ UCLASS()
 class BRICKRIGS_API ABrickWorldSettings : public AWorldSettings
 {
 	GENERATED_BODY()
-
-	// Bounding box of the ocean water
-    	UPROPERTY(EditDefaultsOnly, Category = World)
-        	FBox WaterBounds;
-   	 // Used to determine the altitude
-    	UPROPERTY(EditDefaultsOnly, Category = World)
-        	float SeaLevel;
-	
+        // Bounding box of the ocean water
+    UPROPERTY(EditDefaultsOnly, Category = World)
+        FBox WaterBounds;
+    // Used to determine the altitude
+    UPROPERTY(EditDefaultsOnly, Category = World)
+        float SeaLevel;
 };

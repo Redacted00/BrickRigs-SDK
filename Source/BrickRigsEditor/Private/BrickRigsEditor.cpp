@@ -49,7 +49,6 @@ void FBrickRigsEditorModule::StartupModule()
     
     ASSET_TYPE_ACTIONS(LevelInfo);
     ASSET_TYPE_ACTIONS(GameModeInfo);
-    ASSET_TYPE_ACTIONS(DestructibleInstanceTemplate);
     ASSET_TYPE_ACTIONS(BrickMaterial);
     ASSET_TYPE_ACTIONS(BrickDecal);
 

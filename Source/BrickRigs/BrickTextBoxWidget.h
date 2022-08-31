@@ -16,10 +16,13 @@ class BRICKRIGS_API UBrickTextBoxWidget : public UUserWidget
 {
 	GENERATED_BODY()
 public:
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTextBoxChanged, const FText&, NewText, EValueChangedEventType, EventType);
 	
 	UPROPERTY(BlueprintReadOnly, meta = (BindWidgetOptional))
 	UBrickButtonWidget* ShowPasswordButton;
 
+	UPROPERTY(BlueprintAssignable)
+	FOnTextBoxChanged OnTextChangedDelegate;
 
 	UPROPERTY(EditAnywhere, Category = TextBox, meta = (ClampMin = 0))
 	int32 MaxTextLength;
