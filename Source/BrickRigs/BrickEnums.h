@@ -1,5 +1,4 @@
 ﻿#pragma once
-
 UENUM(BlueprintType)
 enum class EBrickUIStyleState : uint8
 {
@@ -85,3 +84,4 @@ enum class EValueChangedEventType : uint8
     Cancel,
     Pending
 };
+
