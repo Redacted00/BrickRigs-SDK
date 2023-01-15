@@ -23,4 +23,9 @@ public:
 		USkyLightComponent* SkyLightComponent;
 	UPROPERTY(EditDefaultsOnly, Category = Components)
 		UPostProcessComponent* PostProcessComponent;
+	UPROPERTY(EditAnywhere, Category = WorldSetup)
+		float WaterHeight;
+	// Above the maximum height there will always be snow, below the minimum never
+	UPROPERTY(EditAnywhere, Category = WorldSetup)
+		FFloatInterval SnowHeightRange;
 };

@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 UENUM(BlueprintType)
 enum class EBrickUIStyleState : uint8
 {
@@ -80,8 +81,7 @@ enum class EBrickUIIconAtlas : uint8
 UENUM(BlueprintType)
 enum class EValueChangedEventType : uint8
 {
-    Commit,
-    Cancel,
-    Pending
+	Commit,
+	Cancel,
+	Pending
 };
-

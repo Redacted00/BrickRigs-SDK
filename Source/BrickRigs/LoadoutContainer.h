@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/PlayerState.h"
-#include "BrickPlayerState.generated.h"
+#include "UObject/NoExportTypes.h"
+#include "LoadoutContainer.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class BRICKRIGS_API ABrickPlayerState : public APlayerState
+class BRICKRIGS_API ULoadoutContainer : public UObject
 {
 	GENERATED_BODY()
 	

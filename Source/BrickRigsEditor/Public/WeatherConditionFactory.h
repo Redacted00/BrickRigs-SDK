@@ -14,9 +14,12 @@ UCLASS()
 class BRICKRIGSEDITOR_API UWeatherConditionFactory : public UBrickFactory
 {
 	GENERATED_BODY()
-public:
-	UWeatherConditionFactory()
-	{
-		UWeatherCondition::StaticClass();
-	}
+
+        // ~Constructor
+        UWeatherConditionFactory()
+    {
+        SupportedClass = UWeatherCondition::StaticClass();
+    }
+
+	
 };
