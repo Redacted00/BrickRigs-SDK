@@ -1,0 +1,19 @@
+#include "BrickWorldSettings.h"
+#include "ProjectileManagerComponent.h"
+#include "ThumbnailManagerComponent.h"
+
+class ABrickWorldSettings;
+class UObject;
+
+ABrickWorldSettings* ABrickWorldSettings::GetWorldSettings(UObject* WorldContextObject) {
+    return NULL;
+}
+
+ABrickWorldSettings::ABrickWorldSettings() {
+    this->WorldSetupActor = NULL;
+    this->DefaultWaterPhysicsVolume = NULL;
+    this->ProjectileManager = CreateDefaultSubobject<UProjectileManagerComponent>(TEXT("ProjectileManager"));
+    this->ThumbnailManager = CreateDefaultSubobject<UThumbnailManagerComponent>(TEXT("ThumbnailManager"));
+    this->SeaLevel = 0.00f;
+}
+
