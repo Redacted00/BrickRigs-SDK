@@ -1,5 +1,0 @@
-#include "MovieSceneCameraShakeSourceTriggerSectionTemplate.h"
-
-FMovieSceneCameraShakeSourceTriggerSectionTemplate::FMovieSceneCameraShakeSourceTriggerSectionTemplate() {
-}
-
