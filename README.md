@@ -7,4 +7,4 @@
 *Этот проект должен помочь мододелам в кирпичных буровых установках (брик ригсе)*
 
 ## Some stuff for map'makers / Для мапмейкеров
- - [Bricksdale Speedway Props Pack](https://sites.google.com/view/bricksdale-speedway/props)
+ - [Bricksdale Speedway Props Pack](https://sites.google.com/view/bricksdale-speedway/props) by batt
