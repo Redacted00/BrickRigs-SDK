@@ -12,7 +12,7 @@ public class BrickRigs : ModuleRules
             "Core", "CoreUObject", "Engine", "InputCore",
             "UMG",
             "PhysX", "PhysicsCore", "APEX", "CableComponent",
-            "AIModule"
+            "AIModule", "Foliage"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] {
