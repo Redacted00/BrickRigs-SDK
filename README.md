@@ -1,4 +1,4 @@
-# Brick Rigs SDK
+# Brick Rigs Unofficial SDK
 
 [![](https://img.shields.io/discord/965288530576285736?color=blue&label=Mod%27makers%20club&logo=Discord&logoColor=white)](https://discord.gg/88e6YB6hY9)
 
