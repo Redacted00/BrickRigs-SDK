@@ -21,7 +21,8 @@
 			"AdditionalDependencies": [
 				"AnimGraph",
 				"CoreUObject",
-				"UnrealEd"
+				"UnrealEd",
+				"Landscape"
 			]
 		}
 	],
@@ -32,6 +33,10 @@
 		},
 		{
 			"Name": "OnlineFramework",
+			"Enabled": true
+		},
+		{
+			"Name": "Water",
 			"Enabled": true
 		}
 	]
