@@ -11,6 +11,7 @@
  - [UE Viewer](https://www.gildor.org/downloads) - For viewing and extracting resources from games, made with Unreal Engine -  Author: *gildor2*
  - [Plugin for import psk/psa with Blender](https://github.com/Befzz/blender3d_import_psk_psa) - Import models (psk) and animations (psa) to Blender - Author: *Befzz*
  - [Plugin for import brv with Blender](https://cdn.discordapp.com/attachments/751767065970475093/934896472162439178/BrvImporter_Adobe_1.0.1.zip) - Import Brick Rigs Vehicles (brv) to Blender - Author: *Adobe*
+ - [Stove](https://github.com/bananaturtlesandwich/stove) - Editor for cooked UE4 maps - Author: *bananaturtlesandwich*
  
 ### Some stuff for map'makers / Для мапмейкеров
  - [Bricksdale Speedway Props Pack](https://sites.google.com/view/bricksdale-speedway/props) by batt
