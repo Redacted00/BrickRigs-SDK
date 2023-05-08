@@ -71,7 +71,8 @@ public:
 	// Draws the given material to the current render target
 	UFUNCTION(BlueprintCallable)
 		void DrawMaterial(UMaterialInterface* Material);
-
+	UFUNCTION(BlueprintCallable)
+		void DrawBuildings();
 	// Draws a rectangle around all buildings
 	/*UFUNCTION(BlueprintCallable)
 		void DrawBuildings();*/

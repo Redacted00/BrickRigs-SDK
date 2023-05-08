@@ -11,6 +11,7 @@
 //#include "Buildings/BrickBuilding.h"
 #include "Landscape/Classes/Landscape.h"
 #include "LandscapeDataAccess.h"
+#include <BrickRigs/BrickBuilding.h>
 
 ABrickLandscapeBrush::ABrickLandscapeBrush()
 {
@@ -155,7 +156,7 @@ void ABrickLandscapeBrush::DrawMaterial(UMaterialInterface* Material)
 	}
 }
 
-/*void ABrickLandscapeBrush::DrawBuildings()
+void ABrickLandscapeBrush::DrawBuildings()
 {
 	// Create the canvas for drawing
 	auto* Canvas = static_cast<UCanvas*>(nullptr);
@@ -190,7 +191,7 @@ void ABrickLandscapeBrush::DrawMaterial(UMaterialInterface* Material)
 	// Stop the drawing
 	UKismetRenderingLibrary::EndDrawCanvasToRenderTarget(this, RenderContext);
 }
-*/
+
 /*void ABrickLandscapeBrush::DrawFoliage(const TArray<UFoliageType*>& FoliageTypes, UTexture* Texture, float Scale)
 {
 	// Create the canvas for drawing

@@ -9,12 +9,12 @@
 /**
  * 
  */
-UCLASS(Abstract)
+UCLASS(Abstract, Blueprintable)
 class BRICKRIGS_API AGarage : public ABrickBuilding
 {
     GENERATED_BODY()
-
-        UPROPERTY(EditDefaultsOnly)
+public:
+        UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced)
         USceneComponent* PlayerSpawnPoint;
     AGarage();
 };

@@ -7,4 +7,5 @@ AGarage::AGarage()
 {
     PlayerSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("PlayerSpawnPoint"));
     PlayerSpawnPoint->SetupAttachment(RootComponent);
+
 }

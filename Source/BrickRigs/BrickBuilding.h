@@ -6,21 +6,35 @@
 #include "GameFramework/Actor.h"
 #include "BrickBuilding.generated.h"
 
-UCLASS()
+UCLASS(Abstract, Blueprintable)
 class BRICKRIGS_API ABrickBuilding : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
+
+	// ~Properties
+public:
 	ABrickBuilding();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void GetBuildingLocalBounds(FVector& OutOrigin, FVector& OutExtent) const;
+
+
+#if WITH_EDITORONLY_DATA
+	// The layer the foundation of the building should be painted on
+	UPROPERTY(EditAnywhere, Category = Building)
+		FName LandscapeLayerName;
+	UPROPERTY(EditAnywhere, Category = Building)
+		float LandscapeLayerInflation;
+	UPROPERTY(EditAnywhere, Category = Building)
+		FVector BuildingBoundsOrigin;
+	UPROPERTY(EditAnywhere, Category = Building)
+		FVector BuildingBoundsExtent;
+#endif
 };
