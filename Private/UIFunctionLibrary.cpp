@@ -1,7 +1,5 @@
 #include "UIFunctionLibrary.h"
 
-class UWidget;
-
 FText UUIFunctionLibrary::TimespanAsText(const FTimespan& Timespan) {
     return FText::GetEmpty();
 }

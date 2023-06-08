@@ -1,7 +1,5 @@
 #include "BrickButtonWidget.h"
 
-class UWidget;
-
 void UBrickButtonWidget::SetContentVerticalAlignment(TEnumAsByte<EVerticalAlignment> InAlignment) {
 }
 

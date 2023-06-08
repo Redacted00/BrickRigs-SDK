@@ -1,7 +1,5 @@
 #include "PropertiesPanelWidget.h"
 
-class UObject;
-
 void UPropertiesPanelWidget::UpdateProperties() {
 }
 

@@ -21,6 +21,7 @@
 #include "RepActuatorState.h"
 #include "RepHitInfo.h"
 #include "RestartTransformVersion.h"
+#include "VehicleSpawnProperties.h"
 #include "WinchAttachTarget.h"
 #include "BrickPlayerController.generated.h"
 
@@ -74,6 +75,9 @@ private:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AActor* EditorEntryPoint;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
+    float FreezeTime;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UAudioComponent* HurtAudioComponent;
@@ -228,9 +232,6 @@ public:
     UFUNCTION(BlueprintCallable, Exec)
     void KillCharacter();
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    FText GetVehicleSpawnResultDisplayText(EPlayerSpawnResult SpawnResult, int32 NumBricks) const;
-    
 private:
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void ClientWasKickedForDuration(const FString& KickReason, const FBrickDuration& KickDuration);
@@ -256,8 +257,8 @@ public:
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void ClientOnPlayerDied(ABrickPlayerState* Victim, ABrickPlayerState* Killer);
     
-    UFUNCTION(Client, Reliable)
-    void ClientOnFailedToSpawnVehicle(EPlayerSpawnResult SpawnResult, uint16 NumBricks);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
+    void ClientOnFailedToRestart(EPlayerSpawnResult SpawnResult, const FVehicleSpawnProperties& Props);
     
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void ClientDamagedCharacter(const FClientDamageInfo& DamageInfo);

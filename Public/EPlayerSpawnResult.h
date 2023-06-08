@@ -9,10 +9,13 @@ enum class EPlayerSpawnResult : uint8 {
     UnsavedChanges,
     SentToServer,
     BrickLimitExceeded,
+    MassExceeded,
+    SizeExceeded,
     VehicleLimitExceeded,
     VehicleNotWhitelisted,
     OnlyAdminsCanSpawn,
     InsufficientFunds,
     NoObjects,
+    Cooldown,
 };
 

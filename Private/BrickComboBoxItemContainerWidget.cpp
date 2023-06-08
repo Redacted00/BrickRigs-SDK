@@ -1,7 +1,5 @@
 #include "BrickComboBoxItemContainerWidget.h"
 
-class UWidget;
-
 
 void UBrickComboBoxItemContainerWidget::SelectItem() {
 }

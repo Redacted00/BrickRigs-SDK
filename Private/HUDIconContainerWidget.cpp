@@ -1,7 +1,5 @@
 #include "HUDIconContainerWidget.h"
 
-class UHUDIconWidget;
-
 void UHUDIconContainerWidget::UpdateContainerStyle_Implementation(bool bNewSelected, bool bNewCanSpawn, EBrickUIColorStyle NewColorStyle) {
 }
 

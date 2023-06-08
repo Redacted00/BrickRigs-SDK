@@ -1,7 +1,5 @@
 #include "MenuWidget.h"
 
-class UMenuPageWidget;
-
 bool UMenuWidget::StepBack() {
     return false;
 }

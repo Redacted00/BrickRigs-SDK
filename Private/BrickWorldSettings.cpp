@@ -2,9 +2,6 @@
 #include "ProjectileManagerComponent.h"
 #include "ThumbnailManagerComponent.h"
 
-class ABrickWorldSettings;
-class UObject;
-
 ABrickWorldSettings* ABrickWorldSettings::GetWorldSettings(UObject* WorldContextObject) {
     return NULL;
 }

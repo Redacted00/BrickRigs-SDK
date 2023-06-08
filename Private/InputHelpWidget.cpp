@@ -1,7 +1,5 @@
 #include "InputHelpWidget.h"
 
-class UWidget;
-
 void UInputHelpWidget::ToggleInputHelpOpen() {
 }
 

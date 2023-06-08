@@ -1,7 +1,5 @@
 #include "MapWidget.h"
 
-class UWidget;
-
 
 void UMapWidget::ResetPanAndZoom(bool bInitialize) {
 }

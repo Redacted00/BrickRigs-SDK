@@ -2,9 +2,6 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-class UPrimitiveComponent;
-
 void AInventoryItem::OnStaticMeshSleep(UPrimitiveComponent* Primitive, FName BoneName) {
 }
 

@@ -1,9 +1,5 @@
 #include "InputActionListWidget.h"
 
-class UInputActionCategoryWidget;
-class UInputActionWidget;
-class UWidget;
-
 
 UWidget* UInputActionListWidget::GetWidgetToFocus_Implementation() const {
     return NULL;

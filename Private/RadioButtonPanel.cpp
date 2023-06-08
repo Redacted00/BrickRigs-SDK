@@ -1,7 +1,5 @@
 #include "RadioButtonPanel.h"
 
-class URadioButtonWidget;
-
 void URadioButtonPanel::UnselectButton(URadioButtonWidget* Button) {
 }
 

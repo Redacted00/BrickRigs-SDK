@@ -1,8 +1,6 @@
 #include "DragStrip.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void ADragStrip::OnRep_RightLaneState() {
 }
 

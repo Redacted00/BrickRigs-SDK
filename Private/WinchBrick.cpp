@@ -1,8 +1,6 @@
 #include "WinchBrick.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void UWinchBrick::OnRep_RepRopeLength() {
 }
 

@@ -25,6 +25,9 @@ public:
     bool bUsesRoundDuration;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bUsesInfiniteMoney;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUsesSandboxSettings;
     
     UGameModeInfo();

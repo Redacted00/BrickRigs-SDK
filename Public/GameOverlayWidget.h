@@ -95,6 +95,12 @@ protected:
     void UpdateSaveNotification(UHUDNotificationWidget* Widget, bool bSuccess, bool bIsAutoSave);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+    void UpdateRestartFailedNotification(UHUDNotificationWidget* Widget, const FText& Message);
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+    void UpdateRespawnDelayNotification(UHUDNotificationWidget* Widget, float Remaining);
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateProjectileCameraNotification(UHUDNotificationWidget* Widget, bool bNewEnabled);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

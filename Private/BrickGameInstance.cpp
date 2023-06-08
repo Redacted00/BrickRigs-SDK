@@ -1,8 +1,6 @@
 #include "BrickGameInstance.h"
 #include "Templates/SubclassOf.h"
 
-class UPopupParams;
-
 bool UBrickGameInstance::QuitGame() {
     return false;
 }
@@ -40,9 +38,9 @@ UBrickGameInstance::UBrickGameInstance() {
     this->ExplosiveMaterialClasses.AddDefaulted(4);
     this->InventoryItemClasses.AddDefaulted(41);
     this->UIStyleClasses.AddDefaulted(4);
-    this->WeatherConditions.AddDefaulted(12);
-    this->LevelInfos.AddDefaulted(14);
-    this->GameModeInfos.AddDefaulted(7);
+    this->WeatherConditions.AddDefaulted(9);
+    this->LevelInfos.AddDefaulted(11);
+    this->GameModeInfos.AddDefaulted(5);
     this->BillboardImages.AddDefaulted(4);
 }
 

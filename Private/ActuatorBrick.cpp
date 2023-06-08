@@ -1,8 +1,6 @@
 #include "ActuatorBrick.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void UActuatorBrick::OnRep_RepActuatorState() {
 }
 

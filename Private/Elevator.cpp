@@ -3,8 +3,6 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void AElevator::OnRep_ReplicatedTargetHeight() {
 }
 

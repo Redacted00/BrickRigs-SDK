@@ -1,7 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "BrickPropertyInterface.h"
-#include "EPlayerSpawnResult.h"
 #include "EPlayerVehicleSpawnInvincibility.h"
 #include "EUGCQueryType.h"
 #include "EUGCSortMethod.h"
@@ -117,7 +116,7 @@ protected:
     void CreateSpawnInvincibilityButton(const FText& CurrentInvincibilityText);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void CreateSpawnButton(bool bCanReplaceCurrent, EPlayerSpawnResult CanSpawnResult, int32 NumBricks);
+    void CreateSpawnButton(bool bCanReplaceCurrent, bool bCanSpawn, const FText& SpawnFailureText);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void CreateSaveOverwriteButton();

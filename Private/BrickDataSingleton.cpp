@@ -1,7 +1,5 @@
 #include "BrickDataSingleton.h"
 
-class UBrickDataSingleton;
-
 UBrickDataSingleton* UBrickDataSingleton::GetGameSingleton() {
     return NULL;
 }

@@ -1,7 +1,5 @@
 #include "ServerBrowserWidget.h"
 
-class UPagedListEntryWidget;
-
 
 
 void UServerBrowserWidget::RefreshServers() {

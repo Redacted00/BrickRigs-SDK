@@ -1,10 +1,6 @@
 #include "BaseCharacter.h"
 #include "Net/UnrealNetwork.h"
 
-class AActor;
-class ABrickPlayerController;
-class UPrimitiveComponent;
-
 void ABaseCharacter::ServerPerformMeleeAction_Implementation() {
 }
 bool ABaseCharacter::ServerPerformMeleeAction_Validate() {

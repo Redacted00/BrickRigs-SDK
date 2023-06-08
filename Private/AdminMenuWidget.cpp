@@ -1,7 +1,5 @@
 #include "AdminMenuWidget.h"
 
-class UPagedListEntryWidget;
-
 void UAdminMenuWidget::UpdateIsAdmin_Implementation(bool bNewIsAdmin) {
 }
 

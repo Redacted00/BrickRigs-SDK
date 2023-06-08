@@ -1,8 +1,5 @@
 #include "HUDIconComponent.h"
 
-class ABrickPlayerController;
-class UObject;
-
 void UHUDIconComponent::SetIconLocationDelegate(UObject* Object, FName FunctionName) {
 }
 

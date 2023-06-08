@@ -1,8 +1,5 @@
 #include "PagedListWidget.h"
 
-class UObject;
-class UPagedListEntryWidget;
-
 
 
 void UPagedListWidget::SetCurrentPage(int32 InPage) {

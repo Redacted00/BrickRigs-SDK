@@ -1,7 +1,5 @@
 #include "MenuAnchorWidget.h"
 
-class UWidget;
-
 UWidget* UMenuAnchorWidget::GetWidgetToFocus_Implementation() const {
     return NULL;
 }

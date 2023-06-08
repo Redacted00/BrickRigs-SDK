@@ -31,6 +31,7 @@ class UBrick;
 class UBrickConnection;
 class UBrickVehicleComponent;
 class UBrickVehicleStaticInfo;
+class UDestructibleInstancesComponent;
 class UFirearmComponent;
 class UHUDIconComponent;
 class UInventoryComponent;
@@ -143,11 +144,17 @@ private:
     UFUNCTION(BlueprintCallable, Server, Unreliable, WithValidation)
     void ServerUpdateMovement(const FRepPhysicsMovement& Movement, const FRestartTransformVersion& ComparisonIndex);
     
+    UFUNCTION(Reliable, Server, WithValidation)
+    void ServerOnBrokeDestructibleInstances(UDestructibleInstancesComponent* Comp, const TArray<uint16>& Instances, const FRestartTransformVersion& ComparisonIndex);
+    
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void ServerExplodeTankBricks(const TArray<FBrickEditorObjectID>& Tanks, const FRestartTransformVersion& ComparisonIndex);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void ServerBreakConnections(const FBrickConnectionDamageArray& InDamage, const FRestartTransformVersion& ComparisonIndex);
+    
+    UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
+    void ServerApplySeatCollisionDamage(const FBrickEditorObjectID& SeatID, float DamageAmount, const FRestartTransformVersion& ComparisonIndex);
     
     UFUNCTION(BlueprintCallable)
     void OnRep_UGCDownloadProgress();

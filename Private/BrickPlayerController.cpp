@@ -1,18 +1,6 @@
 #include "BrickPlayerController.h"
 #include "Net/UnrealNetwork.h"
 
-class ABaseCharacter;
-class ABrickPlayerState;
-class ABrickVehicle;
-class ADragStrip;
-class AElevator;
-class AGravelSilo;
-class UCouplingBrick;
-class UDetonatorBrick;
-class UInventoryComponent;
-class USwitchBrick;
-class UWinchBrick;
-
 void ABrickPlayerController::ServerUpdateActuator_Implementation(const FRepActuatorState& NewState, const FRestartTransformVersion& RestartVersion) {
 }
 bool ABrickPlayerController::ServerUpdateActuator_Validate(const FRepActuatorState& NewState, const FRestartTransformVersion& RestartVersion) {
@@ -265,10 +253,6 @@ void ABrickPlayerController::OnRep_AccessedInventory(UInventoryComponent* OldInv
 void ABrickPlayerController::KillCharacter() {
 }
 
-FText ABrickPlayerController::GetVehicleSpawnResultDisplayText(EPlayerSpawnResult SpawnResult, int32 NumBricks) const {
-    return FText::GetEmpty();
-}
-
 void ABrickPlayerController::ClientWasKickedForDuration_Implementation(const FString& KickReason, const FBrickDuration& KickDuration) {
 }
 
@@ -290,7 +274,7 @@ void ABrickPlayerController::ClientOnPlayerJoined_Implementation(const FString& 
 void ABrickPlayerController::ClientOnPlayerDied_Implementation(ABrickPlayerState* Victim, ABrickPlayerState* Killer) {
 }
 
-void ABrickPlayerController::ClientOnFailedToSpawnVehicle_Implementation(EPlayerSpawnResult SpawnResult, uint16 NumBricks) {
+void ABrickPlayerController::ClientOnFailedToRestart_Implementation(EPlayerSpawnResult SpawnResult, const FVehicleSpawnProperties& Props) {
 }
 
 void ABrickPlayerController::ClientDamagedCharacter_Implementation(const FClientDamageInfo& DamageInfo) {
@@ -306,6 +290,7 @@ void ABrickPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
     DOREPLIFETIME(ABrickPlayerController, SpectatedCharacter);
     DOREPLIFETIME(ABrickPlayerController, AccessedInventory);
     DOREPLIFETIME(ABrickPlayerController, ReplicatedInventory);
+    DOREPLIFETIME(ABrickPlayerController, FreezeTime);
 }
 
 ABrickPlayerController::ABrickPlayerController() {
@@ -318,6 +303,7 @@ ABrickPlayerController::ABrickPlayerController() {
     this->AccessedInventory = NULL;
     this->BrickEditor = NULL;
     this->EditorEntryPoint = NULL;
+    this->FreezeTime = 0.00f;
     this->HurtAudioComponent = NULL;
 }
 

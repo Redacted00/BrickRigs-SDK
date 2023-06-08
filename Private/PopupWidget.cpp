@@ -1,9 +1,5 @@
 #include "PopupWidget.h"
 
-class UMenuButtonPanelWidget;
-class UPopupContainerWidget;
-class UWidget;
-
 void UPopupWidget::UpdatePopupTitle() {
 }
 

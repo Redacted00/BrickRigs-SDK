@@ -1,8 +1,6 @@
 #include "SwitchBrick.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void USwitchBrick::OnRep_InteractionValue() {
 }
 

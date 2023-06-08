@@ -1,7 +1,5 @@
 #include "ChatWidget.h"
 
-class UWidget;
-
 
 void UChatWidget::UpdateScrollBoxVisibility_Implementation(bool bNewVisible) {
 }

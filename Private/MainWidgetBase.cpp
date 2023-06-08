@@ -1,7 +1,5 @@
 #include "MainWidgetBase.h"
 
-class UWidget;
-
 void UMainWidgetBase::OnFadedOut() {
 }
 

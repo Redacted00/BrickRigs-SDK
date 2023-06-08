@@ -1,11 +1,6 @@
 #include "BrickStatics.h"
 #include "Templates/SubclassOf.h"
 
-class AActor;
-class APawn;
-class UExplosiveMaterial;
-class UObject;
-
 bool UBrickStatics::SpreadFire(UObject* WorldContextObject, const FTransform& Transform, const FVector& BoundsMin, const FVector& BoundsMax, float SpreadDistance, float SpreadProbability) {
     return false;
 }

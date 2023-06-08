@@ -1,8 +1,5 @@
 #include "RestrictedAreaVolume.h"
 
-class AActor;
-class UPrimitiveComponent;
-
 void ARestrictedAreaVolume::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
 }
 

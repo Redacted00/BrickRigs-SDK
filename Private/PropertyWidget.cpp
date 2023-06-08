@@ -1,7 +1,5 @@
 #include "PropertyWidget.h"
 
-class UWidget;
-
 void UPropertyWidget::UpdateIsReadOnly_Implementation(bool bNewReadOnly) {
 }
 

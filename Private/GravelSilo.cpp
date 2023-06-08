@@ -1,8 +1,6 @@
 #include "GravelSilo.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void AGravelSilo::OnRep_bIsSiloOpen() {
 }
 

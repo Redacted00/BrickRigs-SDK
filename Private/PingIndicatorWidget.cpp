@@ -1,7 +1,5 @@
 #include "PingIndicatorWidget.h"
 
-class ABrickPlayerState;
-
 void UPingIndicatorWidget::UpdatePing_Implementation(int32 InPing) {
 }
 

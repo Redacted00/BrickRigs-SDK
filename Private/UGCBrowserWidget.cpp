@@ -1,7 +1,5 @@
 #include "UGCBrowserWidget.h"
 
-class UPagedListEntryWidget;
-
 void UUGCBrowserWidget::VoteOnSelectedItem(bool bVoteUp) {
 }
 

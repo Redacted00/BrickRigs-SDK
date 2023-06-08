@@ -1,8 +1,5 @@
 #include "BrickComboBoxWidget.h"
 
-class UBrickComboBoxItemContainerWidget;
-class UWidget;
-
 
 
 void UBrickComboBoxWidget::ToggleComboBoxExpanded() {

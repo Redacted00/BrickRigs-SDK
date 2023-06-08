@@ -1,12 +1,6 @@
 #include "BrickCharacter.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickVehicle;
-class AInventoryItem;
-class UBrick;
-class UFirearmComponent;
-class USeatBrick;
-
 void ABrickCharacter::ServerUpdateVehicleViewRotation_Implementation(USeatBrick* Seat, int32 PackedView, bool bNewAiming) {
 }
 bool ABrickCharacter::ServerUpdateVehicleViewRotation_Validate(USeatBrick* Seat, int32 PackedView, bool bNewAiming) {

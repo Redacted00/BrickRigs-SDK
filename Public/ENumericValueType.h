@@ -22,6 +22,7 @@ enum class ENumericValueType : uint8 {
     DistanceAuto,
     DistanceMetric,
     DistanceImperial,
+    DistanceZeroAsUnlimited,
     VolumeAuto,
     VolumeMetric,
     VolumeImperial,
@@ -32,5 +33,6 @@ enum class ENumericValueType : uint8 {
     MassAuto,
     MassMetric,
     MassImperial,
+    MassZeroAsUnlimited,
 };
 

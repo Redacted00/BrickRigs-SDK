@@ -1,7 +1,5 @@
 #include "CouplingBrick.h"
 
-class ABrickPlayerController;
-
 void UCouplingBrick::Interact_EngageCoupling(ABrickPlayerController* PC) {
 }
 

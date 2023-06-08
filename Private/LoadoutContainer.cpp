@@ -1,7 +1,5 @@
 #include "LoadoutContainer.h"
 
-class ABrickPlayerController;
-
 
 void ALoadoutContainer::Interact_Inventory(ABrickPlayerController* PC) {
 }

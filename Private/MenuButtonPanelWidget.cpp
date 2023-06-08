@@ -1,8 +1,5 @@
 #include "MenuButtonPanelWidget.h"
 
-class UMenuButtonWidget;
-class UWidget;
-
 void UMenuButtonPanelWidget::SetNumButtonsPerRow(int32 NewNum) {
 }
 

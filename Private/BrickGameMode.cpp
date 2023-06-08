@@ -26,7 +26,6 @@ ABrickGameMode::ABrickGameMode() {
     this->AutoBalanceTeamsThreshold = 0.10f;
     this->MaxSpawnPlayerRelevanceDistance = 5000.00f;
     this->MaxLocalChatDistance = 2000.00f;
-    this->PricePerVehicleBrick = 10.00f;
     this->MaxTeamScore = 100;
     this->KillTeamScore = 1;
     this->AddScoreMoneyRatio = 1.00f;
@@ -52,13 +51,11 @@ ABrickGameMode::ABrickGameMode() {
     this->bRespawnLoadoutOnRestart = true;
     this->bAllowFreeCam = false;
     this->bAllowInteractionWhileUnconscious = false;
-    this->bAllowSpawnAnywhere = false;
     this->bAllowTeleporting = false;
     this->bAllowSpawnOnGarages = false;
     this->bAllowSpawnOnNeutralVehicles = false;
     this->bAllowSpawnOnHostileVehicles = false;
     this->bAllowSpawnVehicleWhileUnconscious = false;
-    this->bAllowInvincibility = false;
     this->bAllowInfiniteFuel = false;
     this->bAllowInfiniteAmmo = false;
     this->bAllowSlowMotion = false;
@@ -68,7 +65,6 @@ ABrickGameMode::ABrickGameMode() {
     this->bAllowExplodeVehicle = false;
     this->bAllowEnterHostileVehicle = false;
     this->bAllowEnterVehicleWithoutSeat = false;
-    this->bAllowAccessLoadoutContainerFromAnywhere = false;
     this->bAllowInfiniteMoney = false;
     this->bAllowFriendlyFire = false;
     this->bAllowChangeTeamWhileAlive = false;

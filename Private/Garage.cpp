@@ -1,8 +1,6 @@
 #include "Garage.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 
-class ABrickPlayerController;
-
 void AGarage::Interact_SpawnVehicle(ABrickPlayerController* PC) {
 }
 

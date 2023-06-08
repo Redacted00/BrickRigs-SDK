@@ -1,9 +1,6 @@
 #include "SeatBrick.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickCharacter;
-class ABrickPlayerController;
-
 void USeatBrick::OnRep_VehicleInput() {
 }
 

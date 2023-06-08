@@ -2,11 +2,15 @@
 #include "BrickVehicleComponent.h"
 #include "Net/UnrealNetwork.h"
 
-class ABrickPlayerController;
-
 void ABrickVehicle::ServerUpdateMovement_Implementation(const FRepPhysicsMovement& Movement, const FRestartTransformVersion& ComparisonIndex) {
 }
 bool ABrickVehicle::ServerUpdateMovement_Validate(const FRepPhysicsMovement& Movement, const FRestartTransformVersion& ComparisonIndex) {
+    return true;
+}
+
+void ABrickVehicle::ServerOnBrokeDestructibleInstances_Implementation(UDestructibleInstancesComponent* Comp, const TArray<uint16>& Instances, const FRestartTransformVersion& ComparisonIndex) {
+}
+bool ABrickVehicle::ServerOnBrokeDestructibleInstances_Validate(UDestructibleInstancesComponent* Comp, const TArray<uint16>& Instances, const FRestartTransformVersion& ComparisonIndex) {
     return true;
 }
 
@@ -19,6 +23,12 @@ bool ABrickVehicle::ServerExplodeTankBricks_Validate(const TArray<FBrickEditorOb
 void ABrickVehicle::ServerBreakConnections_Implementation(const FBrickConnectionDamageArray& InDamage, const FRestartTransformVersion& ComparisonIndex) {
 }
 bool ABrickVehicle::ServerBreakConnections_Validate(const FBrickConnectionDamageArray& InDamage, const FRestartTransformVersion& ComparisonIndex) {
+    return true;
+}
+
+void ABrickVehicle::ServerApplySeatCollisionDamage_Implementation(const FBrickEditorObjectID& SeatID, float DamageAmount, const FRestartTransformVersion& ComparisonIndex) {
+}
+bool ABrickVehicle::ServerApplySeatCollisionDamage_Validate(const FBrickEditorObjectID& SeatID, float DamageAmount, const FRestartTransformVersion& ComparisonIndex) {
     return true;
 }
 

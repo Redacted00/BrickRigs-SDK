@@ -1,7 +1,5 @@
 #include "CarWheelBrick.h"
 
-class UPrimitiveComponent;
-
 void UCarWheelBrick::OnRootComponentWake(UPrimitiveComponent* SleepingComponent, FName BoneName) {
 }
 

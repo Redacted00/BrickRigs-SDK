@@ -18,13 +18,13 @@ protected:
     void UpdateNumObjects(int32 InNumObjects, int32 InMaxNumObjects, int32 InNumHiddenObjects, int32 InNumObjectsWithAerodynamics);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void UpdateMass(float InMass);
+    void UpdateMass(float InMass, float InMaxMass);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateEntry(const FText& InTitleText, bool bInHasUnsavedChanges);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void UpdateDimensions(const FVector& InDimensions);
+    void UpdateDimensions(const FVector& InDimensions, const FVector& InMaxDimensions);
     
 private:
     UFUNCTION(BlueprintCallable)

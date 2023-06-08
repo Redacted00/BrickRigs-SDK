@@ -2,9 +2,6 @@
 #include "Net/UnrealNetwork.h"
 #include "Templates/SubclassOf.h"
 
-class ABrickPlayerController;
-class AInventoryItem;
-
 void UInventoryComponent::MulticastOnPickedUpItems_Implementation() {
 }
 

@@ -1,8 +1,6 @@
 #include "LegacyBuilding.h"
 #include "DestructibleInstancesComponent.h"
 
-class UBuildingPart;
-
 void ALegacyBuilding::SpawnBuildingPart(UBuildingPart* Part) {
 }
 

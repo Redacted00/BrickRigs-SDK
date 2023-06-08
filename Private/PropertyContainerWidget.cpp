@@ -1,7 +1,5 @@
 #include "PropertyContainerWidget.h"
 
-class UWidget;
-
 
 bool UPropertyContainerWidget::OpenContextMenu() {
     return false;

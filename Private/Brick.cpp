@@ -1,7 +1,5 @@
 #include "Brick.h"
 
-class ABrickPlayerController;
-
 void UBrick::Interact_PickUp(ABrickPlayerController* OtherPC) {
 }
 
