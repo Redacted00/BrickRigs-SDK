@@ -1,5 +1,16 @@
 # Brick Rigs Unofficial SDK
 
+## 4GB of happiness
+
+***THIS BR SDK BRANCH IS VERY UNSTABLE***
+*NOBODY KNOWS POTENTIAL OF THIS BRANCH*
+This branch has every single Brick Rigs C++ file and it took a lot of time just to run it.
+If you have any questions ask **kotofyt** or **redactedxd** in Discord
+
+If you want to merge BR SDK and "4GB of happiness" just copy Content folder from BR SDK into '4GB of hapiness"
+
+
+
 [![](https://img.shields.io/discord/965288530576285736?color=blue&label=Mod%27makers%20club&logo=Discord&logoColor=white)](https://discord.gg/88e6YB6hY9)
 
 *This project should help with modding for Brick Rigs*
