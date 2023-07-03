@@ -7,37 +7,7 @@
 		{
 			"Name": "BrickRigs",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"CoreUObject",
-				"Engine",
-				"UMG"
-			]
-		},
-		{
-			"Name": "BrickRigsEditor",
-			"Type": "Editor",
-			"LoadingPhase": "PreDefault",
-			"AdditionalDependencies": [
-				"AnimGraph",
-				"CoreUObject",
-				"UnrealEd",
-				"Landscape"
-			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "OnlineSubsystemSteam",
-			"Enabled": true
-		},
-		{
-			"Name": "OnlineFramework",
-			"Enabled": true
-		},
-		{
-			"Name": "Water",
-			"Enabled": true
+			"LoadingPhase": "Default"
 		}
 	]
 }

@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
 
 public class BrickRigs : ModuleRules
@@ -7,35 +5,38 @@ public class BrickRigs : ModuleRules
     public BrickRigs(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        bLegacyPublicIncludePaths = false;
+        ShadowVariableWarningLevel = WarningLevel.Warning;
 
         PublicDependencyModuleNames.AddRange(new string[] {
-            "Core", "CoreUObject", "Engine", "InputCore",
-            "UMG",
-            "PhysX", "PhysicsCore", "APEX", "CableComponent",
-            "AIModule", "Foliage"
-        });
-
-        PrivateDependencyModuleNames.AddRange(new string[] {
-            "Slate", "SlateCore", "RenderCore",
-            "AnimationCore", "AnimGraphRuntime",
-            "OnlineSubsystem", "OnlineSubsystemUtils",
-            "Steamworks", "SteamSockets",
-            "Sockets", "Networking",
-            "HTTP",
-            "MoviePlayer",  "ImageWrapper",
+            "AIModule",
+            "AudioExtensions",
+            "AudioMixer",
+            "AudioPlatformConfiguration",
+            "CableComponent",
+            "Chaos",
+            "ClothingSystemRuntimeInterface",
+            "Core",
+            "CoreUObject",
+            "DeveloperSettings",
+            "Engine",
             "GameplayTags",
-            "EngineSettings",
+            "GameplayTasks",
+            "InputCore",
             "Landscape",
-            "ApplicationCore"
+            "MeshDescription",
+            "MovieScene",
+            "MovieSceneTracks",
+            "NavigationSystem",
+            "OnlineSubsystem",
+            "PacketHandler",
+            "PhysicsCore",
+            "PropertyAccess",
+            "PropertyPath",
+            "Slate",
+            "SlateCore",
+            "StaticMeshDescription",
+            "UMG",
         });
-        
-        DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
-
-        if (Target.bBuildEditor)
-        {
-            PrivateDependencyModuleNames.AddRange(new string[] {
-                "UnrealEd"
-            });
-        }
     }
 }
