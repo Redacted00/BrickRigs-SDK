@@ -11,9 +11,6 @@ If you have any questions ask **kotofyt** or **redactedxd** in Discord
 
 If you want to merge BR SDK and "4GB of happiness" just copy Content folder from BR SDK into '4GB of hapiness"
 
-(Will be deleted today) Temporal link -> https://drive.google.com/file/d/1Z75moKEtGdlC4EbSF9ZGxUfsXcoE5azs/view?usp=sharing
-Sorry ДТЕК is fixing light again so i can't upload files here
-
 ## BR SDK PART ⬇️
 
 
